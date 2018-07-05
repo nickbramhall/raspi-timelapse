@@ -4,9 +4,12 @@ This set of scripts captures a timelapse using a webcam connected to the Raspber
 
 ## Setup
 
-* Setup a Python  virtual environment using requirements.txt
+* Create a new timelapse folder
+* Within the timelapse folder creater folders for timelapse-stills and timelapse-videos
+* Setup a Python  virtual environment in timelapse/venv using requirements.txt
 * Install gstream using `sudo apt-get install gstreamer1.0-tools`
 * Connect a USB webcam to the Raspberry Pi
+* Modify the fswebcam command within webcam.sh to suit your webcam settings (e.g. changing the maximum resolution)
 * Ensure all the scripts have appropriate permissions
 * Add and configure a **settings.py** file for your location into the scripts folder
 * Create a folder for storing webcam images

@@ -49,7 +49,7 @@ time_difference_in_seconds = time_difference.total_seconds()
 
 sleep(time_difference_in_seconds)
 
-job = cron.new(command='./webcam.sh')  # Add a new Cron job to start taking timelapse photos every minute
+job = cron.new(command='/home/pi/Apps/timelapse/webcam.sh')  # Add a new Cron job to start taking timelapse photos every minute
 job.minute.every(1)
 
 cron.write()
@@ -68,6 +68,6 @@ sleep(time_difference_in_seconds)
 
 cron.remove(job) # Remove the Cron job to stop taking timelapse photos
 
-### Process the timelapse
+### Process the timelapse - currently done by a separate script
 
 # Timelapse finished
