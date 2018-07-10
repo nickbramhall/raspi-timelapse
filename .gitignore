@@ -106,3 +106,12 @@ venv.bak/
 # Settings files
 
 settings.py
+config.py
+
+# Project files
+
+app/
+timelapse-server.py
+tl-test.py
+
+
